@@ -4,5 +4,6 @@
         <file>FrontPage.qml</file>
         <file>IndexPage.qml</file>
         <file>Footer.qml</file>
+        <file>Page.qml</file>
     </qresource>
 </RCC>

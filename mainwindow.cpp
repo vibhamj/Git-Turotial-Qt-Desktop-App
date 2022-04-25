@@ -10,8 +10,7 @@ MainWindow::MainWindow(QWidget *parent) :
     this->setWindowTitle("The Little Book of Git");
 
     QQuickWidget *view = new QQuickWidget;
-    view->setSource(QUrl(QStringLiteral("qrc:/FrontPage.qml")));
+    view->setSource(QUrl(QStringLiteral("qrc:/Page.qml")));
     view->show();
-
 }
 
