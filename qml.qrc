@@ -1,8 +1,7 @@
 <RCC>
     <qresource prefix="/">
-        <file>main.qml</file>
         <file>FrontPage.qml</file>
-        <file>IndexPage.qml</file>
+        <file>IntroPage.qml</file>
         <file>Footer.qml</file>
         <file>Page.qml</file>
     </qresource>

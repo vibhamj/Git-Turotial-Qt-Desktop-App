@@ -18,6 +18,7 @@ set(PROJECT_SOURCES
         main.cpp
         book.h book.cpp
         mainwindow.h mainwindow.cpp
+        page.h page.cpp
         qml.qrc
 )
 

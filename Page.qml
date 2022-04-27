@@ -9,7 +9,7 @@ Rectangle {
 
     ColumnLayout {
 
-        FrontPage {
+        Loader {
             id: content
             Layout.alignment: Qt.AlignCenter
             Layout.preferredWidth: page.width
@@ -23,7 +23,14 @@ Rectangle {
             Layout.alignment: Qt.AlignRight
             Layout.preferredWidth: page.width - footer.Layout.rightMargin
             Layout.preferredHeight: 50
+            onNextPressed: {
+                content.source = mainWindow.getNextPageQmlFilePath();
+                nextButton.text = mainWindow.isLastPage() ? "Finish" : "Next";
+            }
         }
+
     }
+
+    Component.onCompleted: content.source = "FrontPage.qml"
 
 }
