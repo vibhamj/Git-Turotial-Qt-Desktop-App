@@ -11,6 +11,7 @@ public:
     Q_INVOKABLE QString getNextPageQmlFilePath() const;
     Q_INVOKABLE QString getHomePageQmlFilePath() const;
     Q_INVOKABLE bool isLastPage() const;
+    Q_INVOKABLE bool isFirstPage() const;
     ~MainWindow();
 
 private:

@@ -20,6 +20,7 @@ Q_OBJECT
     QString getNextPageQmlFilePath() const;
     QString getHomePageQmlFilePath() const;
     bool isLastPage() const;
+    bool isFirstPage() const;
  private:
    QList<Page> m_Pages;
    mutable int m_CurrentPage;

@@ -36,6 +36,11 @@ bool MainWindow::isLastPage() const
     return m_Book->isLastPage();
 }
 
+bool MainWindow::isFirstPage() const
+{
+    return m_Book->isFirstPage();
+}
+
 MainWindow::~MainWindow()
 {
     delete m_Book;

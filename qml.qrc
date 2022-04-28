@@ -4,5 +4,8 @@
         <file>IntroPage.qml</file>
         <file>Footer.qml</file>
         <file>Page.qml</file>
+        <file>Resources/indexButton.png</file>
+        <file>Header.qml</file>
+        <file>IndexTab.qml</file>
     </qresource>
 </RCC>

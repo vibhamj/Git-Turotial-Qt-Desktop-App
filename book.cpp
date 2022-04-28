@@ -41,6 +41,10 @@ bool Book::isLastPage() const
     return m_CurrentPage == m_Pages.count() - 1;
 }
 
+bool Book::isFirstPage() const
+{
+    return m_CurrentPage == - 1;
+}
 
 int Book::rowCount(const QModelIndex& parent) const
 {

@@ -8,15 +8,15 @@ RowLayout {
     signal nextPressed()
 
     layoutDirection: Qt.RightToLeft
-    spacing: 40
+    spacing: 20
 
     Button {
         id: next
         flat: true
         text: "Start"
         implicitWidth: contentItem.implicitWidth + 20
-        implicitHeight: contentItem.implicitHeight + 20
-        font.pixelSize: 14
+        height: 40
+        font.pixelSize: 16
         onClicked: nextPressed()
 
         contentItem: Text {
@@ -30,7 +30,7 @@ RowLayout {
 
         background: Rectangle {
                 implicitWidth: next.contentItem.implicitWidth + 20
-                implicitHeight: next.contentItem.implicitHeight + 20
+                implicitHeight: next.height
                 color: next.down ? "#B9B914" : "#95950D"
                 radius: 17
         }

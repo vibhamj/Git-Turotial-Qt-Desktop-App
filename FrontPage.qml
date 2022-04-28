@@ -4,7 +4,7 @@ Item{
     Text {
         id: title
         anchors.fill: parent
-        anchors.topMargin: 200
+        anchors.topMargin: 130
         horizontalAlignment: Text.AlignHCenter
 
 
@@ -17,7 +17,7 @@ Item{
     Text {
         id: author
         anchors.fill: parent
-        anchors.bottomMargin: 80
+        anchors.bottomMargin: 90
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignBottom
 
