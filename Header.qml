@@ -2,18 +2,21 @@ import QtQuick 2.0
 import QtQuick.Controls
 
 Item {
-    property bool indexButtonVisible: false
+    property var indexButton: index
     width: 32
     height: 32
     Button{
-        id: indexButton
+        id: index
         anchors.left: parent.left
         anchors.top: parent.top
         anchors.leftMargin: 15
         anchors.topMargin: 15
-        visible: indexButtonVisible
+        visible: false
         width: parent.width
         height: parent.height
+        checkable: true
+        //display: AbstractButton.IconOnly
+        //icon: "Resources/indexButton.png"
 
         Image {
             source: "Resources/indexButton.png"
@@ -21,7 +24,7 @@ Item {
         }
 
         background: Rectangle {
-                color: indexButton.down ? "#696969" : "#272727"
+                color: index.checked ? "#696969" : "#272727"
                 width: 32
                 height: 32
                 radius: 17

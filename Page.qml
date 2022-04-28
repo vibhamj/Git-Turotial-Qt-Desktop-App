@@ -24,11 +24,7 @@ Rectangle {
             id: content
             Layout.alignment: Qt.AlignCenter
             Layout.preferredWidth: page.width - column.anchors.leftMargin - column.anchors.rightMargin
-            Layout.preferredHeight: {
-                console.log(page.height - footer.height - header.height - column.anchors.topMargin - column.anchors.bottomMargin
-                                    - (column.spacing * 2))
-                return page.height - footer.height - header.height - column.anchors.topMargin - column.anchors.bottomMargin
-            }
+            Layout.preferredHeight: page.height - footer.height - header.height - column.anchors.topMargin - column.anchors.bottomMargin
         }
 
         Footer {
@@ -39,18 +35,27 @@ Rectangle {
             onNextPressed: {
                 content.source = mainWindow.getNextPageQmlFilePath();
                 nextButton.text = mainWindow.isLastPage() ? "Finish" : "Next";
-                header.indexButtonVisible = true;
+                header.indexButton.visible = true;
             }
         }
 
     }
 
-    /*IndexTab {
-        width: 200
-        anchors.left: page.left
+    MouseArea {
+        anchors.fill: page
+        z: -1
+        onClicked: header.indexButton.checked = false
+    }
+
+    IndexTab {
+        id: indexTab
+        width: 500
+        visible: header.indexButton.checked
+        anchors.left: column.left
+        anchors.leftMargin: header.Layout.preferredWidth + column.anchors.leftMargin + 10
         anchors.top: page.top
         anchors.bottom: page.bottom
-    }*/
+    }
 
     Component.onCompleted: content.source = "FrontPage.qml"
 

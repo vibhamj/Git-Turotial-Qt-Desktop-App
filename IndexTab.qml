@@ -10,7 +10,9 @@ Rectangle {
 
         text: "Introduction"
         font.family: "Helvetica"
-        font.pointSize: 24
+        font.pointSize: 18
         color: "#ffffff"
     }
+
+
 }
