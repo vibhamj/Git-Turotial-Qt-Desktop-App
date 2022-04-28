@@ -18,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent) :
     view->show();
 
     m_Book = new Book(nullptr);
+    view->rootContext()->setContextProperty("indexModel",m_Book);
 
 }
 

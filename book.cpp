@@ -16,6 +16,10 @@ void Book::populate()
     beginResetModel();
     m_Pages.clear();
     m_Pages.append(Page("Introduction", Page::PageType::Heading, "IntroPage.qml"));
+    m_Pages.append(Page("Setup", Page::PageType::Heading, "IntroPage.qml"));
+    m_Pages.append(Page("Commands", Page::PageType::Heading, "IntroPage.qml"));
+    m_Pages.append(Page("Command 1", Page::PageType::Heading, "IntroPage.qml"));
+    m_Pages.append(Page("Command 2", Page::PageType::Heading, "IntroPage.qml"));
     endResetModel();
 }
 
@@ -48,7 +52,7 @@ bool Book::isFirstPage() const
 
 int Book::rowCount(const QModelIndex& parent) const
 {
-  return m_Pages.size();
+  return m_Pages.count();
 }
 int Book::columnCount(const QModelIndex& parent) const
 {
