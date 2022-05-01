@@ -1,20 +1,19 @@
 **Git Tutorial Desktop Application**
-Built with Qt and C++
 
 This project is started with the intention to demonstrate my knowledge in Qt, QML, C++, code design and version control skills.
 I have written articles about Git and have been incharge of version controls and releases previously so I picked Git as the topic for this application.
 
 The application starts with a title page (refer Page.qml):
 
-![image](https://user-images.githubusercontent.com/8523768/166157519-d70ff591-4775-4107-ad61-30cd304e6472.png)
+<img src="https://user-images.githubusercontent.com/8523768/166157519-d70ff591-4775-4107-ad61-30cd304e6472.png" width="600"/>
 
 Upon clicking "Start", the following pages are loaded according to the list model, 'Book' (refer book.h):
 
-![image](https://user-images.githubusercontent.com/8523768/166157691-461fc5f5-7aa5-498b-b310-0d542ed181d9.png)
+<img src="https://user-images.githubusercontent.com/8523768/166157691-461fc5f5-7aa5-498b-b310-0d542ed181d9.png" width="600"/>
 
-There is also an index page available on each page by clicking the hambuger icon on the top left corner. The index page lists the contents of the turorial as per 'Book' model's display role:
+There is also an index page available on each page by clicking the hamburger icon on the top left corner. The index page lists the contents of the turorial as per 'Book' model's display role:
 
-![image](https://user-images.githubusercontent.com/8523768/166157818-ab04d6b7-1b3b-465b-992c-c7a7c32a8254.png)
+<img src="https://user-images.githubusercontent.com/8523768/166157818-ab04d6b7-1b3b-465b-992c-c7a7c32a8254.png" width="600"/>
 
 This is work in progress, here is the **DONE** pile:
 
@@ -27,7 +26,7 @@ This is work in progress, here is the **DONE** pile:
 3. Index Page:
   a) Add hamburger icon on top left and make it a toggle button, and if clicked anywhere outside of the index page, the index page should disappear.
   b) Populate the content headings on the index page using the model's display role.
-  
+
 **TO-DO** - With my experience in the field here are the set of features I am going to continue to work on to achieve a complete product:
 
 4. Navigate to page upon clicking an entry in the index page.
