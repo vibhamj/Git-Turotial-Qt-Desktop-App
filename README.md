@@ -27,7 +27,7 @@ This is work in progress, here is the **DONE** pile:
   a) Add hamburger icon on top left and make it a toggle button, and if clicked anywhere outside of the index page, the index page should disappear.
   b) Populate the content headings on the index page using the model's display role.
 
-**TO-DO** - With my experience in the field here are the set of features I am going to continue to work on to achieve a complete product:
+**TO-DO** - With my experience in the field, here are the set of features I am going to continue to work on to achieve a complete product:
 
 4. Navigate to page upon clicking an entry in the index page.
 5. Storing multiple pages' content - maybe sending updated dat file, maintaining cloud DB or showing webpage.
@@ -43,3 +43,6 @@ Bug-1: Index page mouse area
 - Solution: Add a mouse area that overrides the mouse area of the page behind whick looks for mouse click event to close the index page.
 
 Bug-2: Make pages scrollable
+
+Icon used:
+<a target="_blank" href="https://icons8.com/icon/ZZXySkU5qb7q/hamburger">Hamburger</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
