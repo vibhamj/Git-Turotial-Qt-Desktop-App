@@ -1,7 +1,7 @@
 **Git Tutorial Desktop Application**
 
 This project is started with the intention to demonstrate my knowledge in Qt, QML, C++, code design and version control skills.
-I have written articles about Git and have been incharge of version controls and releases previously. So, I have picked Git as the topic for this application.
+I have written articles about Git (https://medium.com/@vibha248) and have been incharge of version controls and releases previously. So, I have picked Git as the topic for this application.
 
 The application starts with a title page (refer Page.qml):
 
