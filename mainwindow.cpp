@@ -10,15 +10,15 @@ MainWindow::MainWindow(QWidget *parent) :
     QQuickWindow::setGraphicsApi(QSGRendererInterface::OpenGL);
 
     this->setFixedSize(640,480);
-    this->setWindowTitle("The Little Book of Git");
+    //this->setWindowTitle("The Little Book of Git");
 
     QQuickWidget *view = new QQuickWidget;
-    view->rootContext()->setContextProperty("mainWindow", this);
-    view->setSource(QUrl(QStringLiteral("qrc:/Page.qml")));
+    //view->rootContext()->setContextProperty("mainWindow", this);
+    view->setSource(QUrl(QStringLiteral("qrc:/Sample.qml")));
     view->show();
 
-    m_Book = new Book(nullptr);
-    view->rootContext()->setContextProperty("indexModel",m_Book);
+    //m_Book = new Book(nullptr);
+    //view->rootContext()->setContextProperty("indexModel",m_Book);
 
 }
 

@@ -7,5 +7,6 @@
         <file>Resources/indexButton.png</file>
         <file>Header.qml</file>
         <file>IndexTab.qml</file>
+        <file>Sample.qml</file>
     </qresource>
 </RCC>
